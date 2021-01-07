@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        bory{
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /* var = n1
+            n1.toFixed(x), "acrescenta x casas decimais no float"
+            n1.toFixed(x).replace(".",","), "replace troca algo por outro ex. '.' por ',' "
+        */
+        var nome = window.prompt('Qual é o seu nome?');
+        document.write(`olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras!<br/>`);
+        document.write(`seu nome em maiúscula é: <strong>${nome.toUpperCase()}</strong>`);
+        document.write(`seu nome em minúscula    é: <strong>${nome.toLowerCase()}</strong>`);
+    </script>
+</body>
+</html>
