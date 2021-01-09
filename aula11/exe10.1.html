@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>check de nacionalidade</h1>
+    Seu país de origem é? <input type="text" name="pais" id="pais">
+    <input type="button" value="comparar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtp = document.querySelector('input#pais')
+            var txtp1 = String(txtp.value)
+            txtp1 = txtp1.toUpperCase()
+            var res = document.querySelector('div#res')
+            if(txtp1 == 'BRASIL' || txtp1 == 'BRASILEIRO' || txtp1 == 'BRASILEIRA'){
+                res.innerHTML = `sua nascionalidade é <strong>BRASILEIRA</strong>`
+            }else{
+                res.innerHTML = `Sua nascionalidade é <strong>ESTRANGEIRA</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
